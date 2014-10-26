@@ -1,7 +1,16 @@
 package willkara.dplajavawrapper;
 
+import java.awt.image.RenderedImage;
 import java.io.IOException;
 import java.net.URL;
+
+import javax.imageio.ImageIO;
+
+/**
+ * TODO: need to fetch new data to make 10 results 
+ * @author maggieguo
+ *
+ */
 
 public class Main {
 	public static void main(String[] args) throws IOException{
@@ -18,9 +27,14 @@ public class Main {
 		itemNum =itemResults.length;
 		
 		URL forPrint;
+
 		for (int k = 0; k < itemNum; k++){
-			forPrint = itemResults[k].getItemURL();
-			System.out.println(forPrint.toString());
+			forPrint = itemResults[k].getObjectURL(); // the URL of object/image
+			if (forPrint != null){ 
+			//System.out.println(forPrint.toString());
+				 RenderedImage img = ImageIO.read(forPrint);
+				 System.out.println(img);
+			}
 		}
 	}
 	

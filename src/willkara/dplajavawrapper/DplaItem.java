@@ -80,6 +80,28 @@ public class DplaItem {
         return shownAtUrl;
 
     }
+    
+    /**
+     * @return the URL to the object
+     */
+    public URL getObjectURL() {
+    	boolean hasImage = jsonParent.has("object");
+    	String objectAt;
+    	if (hasImage){
+    		objectAt=jsonParent.getString("object");
+    		URL objectAtUrl = null;
+    		try {
+    			objectAtUrl = new URL(objectAt);
+    		} catch (MalformedURLException ex) {
+    			Logger.getLogger(DplaItem.class.getName()).log(Level.SEVERE, null,
+    					ex);
+    		}
+    		return objectAtUrl;
+    	}
+    	else{
+    		return null;
+    	}
+    }
 
     /**
      *
