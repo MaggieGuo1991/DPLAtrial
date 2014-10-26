@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="/Users/maggieguo/Development/json-lib-2.4-jdk13.jar"/>
+	<classpathentry kind="lib" path="/Users/maggieguo/Development/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="/Users/maggieguo/Development/org.apache.commons.httpclient.jar" sourcepath=""/>
+	<classpathentry kind="lib" path="/Users/maggieguo/Development/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="/Users/maggieguo/Development/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="/Users/maggieguo/Development/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="/Users/maggieguo/Development/commons-beanutils-1.8.0.jar"/>
+	<classpathentry kind="lib" path="/Users/maggieguo/Development/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="/Users/maggieguo/Development/ezmorph-1.0.6.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
